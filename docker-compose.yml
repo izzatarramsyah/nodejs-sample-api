@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    hostname: mongo
+    volumes:
+      - mongo:/data/db
+    networks:
+      - docker-rest-api-network
+  app:
+    build : .
+    container_name: docker-rest-api
+    ports:
+      - 8000:8000
+    depends_on:
+      - mongo
+    networks:
+      - docker-rest-api-network     
+networks:
+  docker-rest-api-network:
+volumes:
+  mongo:
