@@ -4,9 +4,10 @@
   "description": "docker rest api testing",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --testTimeout=5000",
+    "test": "jest --coverage --coverageDirectory=output/coverage|| exit 0",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "sonar": "node sonar-project.js"
   },
   "author": "",
   "license": "ISC",

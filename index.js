@@ -40,10 +40,10 @@ app.post('/addUser', async (req,res) => {
     });
 });
 
-if (process.env.NODE_ENV == 'test') {
+// if (process.env.NODE_ENV == 'test') {
     module.exports = app;
-} else {
-    app.listen(port, function() {
-        console.log('App running on *: ' + port);
-    });
-}
+// } else {
+//     app.listen(port, function() {
+//         console.log('App running on *: ' + port);
+//     });
+// }
