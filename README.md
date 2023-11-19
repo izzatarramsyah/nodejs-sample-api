@@ -1,2 +1,2 @@
 # nodejs-sample-api
-Node JS Sample API for Docker lessons
+Node JS + MongoDB using docker compose example
