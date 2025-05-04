@@ -5,18 +5,6 @@ This project is intended as a starting point for building scalable backend servi
 
 ---
 
-## 📦 Features
-
-- RESTful API with Express.js
-- MongoDB integration using Mongoose
-- Docker & Docker Compose support
-- Environment-based configuration
-- Basic error handling and logging
-- Organized project structure (controller-service-model)
-- Ready for production extension
-
----
-
 ## 🛠️ Technologies Used
 
 - Node.js
@@ -41,5 +29,7 @@ This project is intended as a starting point for building scalable backend servi
    ```bash
    git clone https://github.com/yourusername/NODEJS-SAMPLE-API.git
    cd NODEJS-SAMPLE-API
-2. Run the project using Docker Compose: docker-compose up --build
-3. Access the API
+2. Run the project using Docker Compose:
+    ```bash
+    docker-compose up --build
+4. Access the API
